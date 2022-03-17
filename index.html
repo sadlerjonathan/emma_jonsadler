@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Product Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
@@ -10,52 +10,89 @@
 
   <body>
 
-    <header>
-      <img src="company.jpg"
-      alt="A company logo"/>
+    <header id="header">
+
+      <!-- width="200" -->
+
+      <img id="header-img" src="company.jpg" alt="A company logo" />
+      
       <nav id="nav-bar">
         <ul>
-          <li><a href="default.asp">SignIn</a> </li>
-          <li><a href="contact.asp">Contact</a></li>
-          <li><a href="about.asp">About</a></li>
+          <li class="nav-link"><a href="#welcome-message">Welcome</a></li>
+          <li class="nav-link"><a href="#product-vid">Product Vid</a></li>
+          <li class="nav-link"><a href="#contact-us">Contact Us</a></li>
         </ul>
-        
       </nav>
       
+      <!--
+          <li><a href="#default">SignIn</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+      -->
 
     </header>  
 
 
-    <div>
-      <p>Hello World !!. We are software developers...</p>
-    </div>
-
-
-    <div>
-
-      <!-- width="1280" height="720" -->
-
-      <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-
-
-    </div>
-
-    <div>
+    <section id="welcome-message">
       
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
 
-        <lable>Email:</lable>  
-        <input id="email" type="text" placeholder="Please enter your email." type="email" required>
+      <!-- <h1>Welcome</h1> -->
 
-        
-        <input id="submit" type="submit" value="Submit">
-
-      </form> 
+      <div>
+        <p>Hello World !!. We are software developers...</p>
+      </div>
+    </section>
     
-    </div> 
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <section id="product-vid">
+
+      <!-- <h1>Featured</h1> -->
+
+      <div>
+
+        <!-- width="1280" height="720" -->
+
+        <video id="video" width="320" height="240" controls>
+          <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+
+
+      </div>
+    </section>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <section id="contact-us">
+
+      <!-- <h1>Contact Us</h1> -->
+
+      <div>
+        
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+          <label>Email:</label>  
+          <input id="email" type="text" placeholder="Please enter your email." type="email" required >
+
+          
+          <input id="submit" type="submit" value="Submit">
+
+        </form> 
+      
+      </div> 
+      
+    </section>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
+    <footer>
+      
+      <!-- remove -->
+
+      <p>Copyright EmCorp.</p>
+    
+    </footer>
 
     <script  src="js/index.js"></script>
   </body>
